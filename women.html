@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Women Footwear - Comfyle</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f5f7fa;
+        }
+
+        /* 🔝 NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: #1e2a38;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            background: #00bfff;
+        }
+
+        .active {
+            background: #00bfff;
+        }
+
+        /* 🎯 HERO SECTION */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            color: #333;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.8;
+        }
+
+        /* 🛍️ PRODUCTS */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            padding: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .price {
+            color: #00bfff;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 10px 20px;
+            background: #1e2a38;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #00bfff;
+        }
+
+        /* 📱 MOBILE */
+        @media(max-width: 600px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 🔝 NAVBAR -->
+<div class="navbar">
+    <div class="logo">Comfyle</div>
+    <div class="nav-links">
+        <a href="Index.html">Home</a>
+        <a class="active" href="women.html">Women</a>
+        <a href="Men.html">Men</a>
+        <a href="kids.html">Kids</a>
+        <a href="sale.html">Sale</a>
+        <a href="about.html">About</a>
+    </div>
+</div>
+
+<!-- 🎯 HERO -->
+<div class="hero">
+    <h1>Women's Footwear 👠</h1>
+    <p>Step into elegance, comfort, and confidence</p>
+</div>
+
+<!-- 🛍️ PRODUCTS -->
+<div class="products">
+
+    <div class="card">
+        <img src="Heels.jpg" alt="">
+        <h3>Elegant Heels</h3>
+        <p class="price">₹2,499</p>
+        <a href="Elegant Heels.html" class="btn">View</a>
+    </div>
+
+    <div class="card">
+        <img src="sneaker.jpg" alt="">
+        <h3>Casual Sneakers</h3>
+        <p class="price">₹1,999</p>
+        <a href="#" class="btn">View</a>
+    </div>
+
+    <div class="card">
+        <img src="flate.jpg" alt="">
+        <h3>Comfort Flats</h3>
+        <p class="price">₹1,499</p>
+        <a href="#" class="btn">View</a>
+    </div>
+
+    <div class="card">
+        <img src="boots.jpg" alt="">
+        <h3>Stylish Boots</h3>
+        <p class="price">₹3,299</p>
+        <a href="#" class="btn">View</a>
+    </div>
+
+</div>
+
+</body>
+</html>

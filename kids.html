@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kids Footwear - Comfyle</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f5f7fa;
+        }
+
+        /* 🔝 NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: #1e2a38;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            background: #00bfff;
+        }
+
+        .active {
+            background: #00bfff;
+        }
+
+        /* 🎯 HERO SECTION */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            color: #333;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.8;
+        }
+
+        /* 🛍️ PRODUCTS */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            padding: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .price {
+            color: #ff7a18;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 10px 20px;
+            background: #1e2a38;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff7a18;
+        }
+
+        /* 📱 MOBILE */
+        @media(max-width: 600px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 🔝 NAVBAR -->
+<div class="navbar">
+    <div class="logo">Comfyle</div>
+    <div class="nav-links">
+        <a href="Index.html">Home</a>
+        <a href="women.html">Women</a>
+        <a href="men.html">Men</a>
+        <a class="active" href="kids.html">Kids</a>
+        <a href="sale.html">Sale</a>
+        <a href="about.html">About</a>
+    </div>
+</div>
+
+<!-- 🎯 HERO -->
+<div class="hero">
+    <h1>Kids' Footwear 🧸</h1>
+    <p>Fun, comfy, and perfect for little adventures</p>
+</div>
+
+<!-- 🛍️ PRODUCTS -->
+<div class="products">
+
+    <div class="card">
+        <img src="KIDS.jpg" alt="">
+        <h3>Kids Sneakers</h3>
+        <p class="price">₹1,299</p>
+        <a href="#" class="btn">View</a>
+    </div>
+
+    <div class="card">
+        <img src="sandal.jpg" alt="">
+        <h3>Colorful Sandals</h3>
+        <p class="price">₹899</p>
+        <a href="#" class="btn">View</a>
+    </div>
+
+    <div class="card">
+        <img src="school.jpg" alt="">
+        <h3>School Shoes</h3>
+        <p class="price">₹1,099</p>
+        <a href="#" class="btn">View</a>
+    </div>
+
+    <div class="card">
+        <img src="boots kids.jpg" alt="">
+        <h3>Mini Boots</h3>
+        <p class="price">₹1,499</p>
+        <a href="#" class="btn">View</a>
+    </div>
+
+</div>
+
+</body>
+</html>
